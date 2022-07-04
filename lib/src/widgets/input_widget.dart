@@ -451,6 +451,7 @@ class _InputWidgetView
                         },
                       )
                     : FilteringTextInputFormatter.digitsOnly,
+                FilteringTextInputFormatter.allow(RegExp(r'[0-9.()-\s]'))
               ],
               onChanged: state.onChanged,
             ),
